@@ -1,6 +1,8 @@
 import './App.css';
 
 import Fc2 from './assets/fc2.jpg'
+import ConditionalRender from './components/ConditionalRender';
+import ListRender from './components/ListRender';
 import Manager from './components/Manager';
 
 function App() {
@@ -18,6 +20,11 @@ function App() {
         </div>
 
         <Manager />
+
+        <ListRender />
+
+        <ConditionalRender />
+
 
     </div>
   );
