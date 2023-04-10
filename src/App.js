@@ -1,23 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
+
+import Fc2 from './assets/fc2.jpg'
+import Manager from './components/Manager';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Avançando com React</h1>
+
+        {/* Imagen no public */}
+        <div>
+            <img src="/fc.jpg" alt="fsociety 1" width="200" />
+        </div>
+        {/* Imagen no assets */}
+        <div>
+            <img src={Fc2} alt="fsociety 2" width="200" />
+        </div>
+
+        <Manager />
+
     </div>
   );
 }
