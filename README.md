@@ -4,3 +4,5 @@
 - Renderizando listas
 - Renderização condicional
 - if/else jsx
+- Props
+- Desestruturando Props
