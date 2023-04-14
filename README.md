@@ -7,3 +7,4 @@
 - Props
 - Desestruturando Props
 - Reaproveitando Componentes
+- Loops com arrays de Objetos

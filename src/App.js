@@ -13,6 +13,12 @@ function App() {
   const name = "Jaylan";
   const [username] = useState("Jaylan");
 
+  const cars = [
+    { id: 1, brand: "Ferrari", color: "Vermelho", km: 0, newCar: true },
+    { id: 2, brand: "Fiat", color: "Prata", km: 1000, newCar: false },
+    { id: 3, brand: "Fiat", color: "Azul", km: 0, newCar: true }
+  ]
+
   return (
     <div className="App">
       <h1>Avançando com React</h1>
@@ -34,10 +40,19 @@ function App() {
       {/* Props */}
       <ShowUserName name="Jaylan" nameVar={name} nameState={username} />
       {/* Destruturando props */}
-      <CarDetails brand="VW" km={100} color="Preto"  newCar={false} />
+      <CarDetails brand="VW" km={100} color="Preto" newCar={false} />
       {/* Reaproveitando Componentes */}
-      <CarDetails brand="Ford" km={10000} color="Branco"  newCar={false} />
-      <CarDetails brand="Fiat" km={0} color="Vermelho" newCar={true}  />
+      <CarDetails brand="Ford" km={10000} color="Branco" newCar={false} />
+      <CarDetails brand="Fiat" km={0} color="Vermelho" newCar={true} />
+      {/* Loop de arrays de objetos */}
+      {cars.map((car) => (
+        <CarDetails
+          brand={car.brand}
+          km={car.km}
+          color={car.color}
+          newCar={car.newCar}
+        />
+      ))}
 
 
     </div>
