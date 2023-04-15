@@ -8,3 +8,5 @@
 - Desestruturando Props
 - Reaproveitando Componentes
 - Loops com arrays de Objetos
+- Fragmentos
+- Children Props

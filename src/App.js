@@ -7,6 +7,8 @@ import ListRender from './components/ListRender';
 import Manager from './components/Manager';
 import ShowUserName from './components/ShowUserName';
 import CarDetails from './components/CarDetails';
+import Fragment from './components/Fragment';
+import ChildrenProp from './components/ChildrenProp';
 
 function App() {
 
@@ -53,6 +55,17 @@ function App() {
           newCar={car.newCar}
         />
       ))}
+      {/* Fragmentos */}
+
+      <Fragment />
+
+      {/* Children prop */}
+
+      <ChildrenProp >
+        <div>
+          <p>AQUI È UM CHILDREN PROP</p>
+        </div>
+      </ChildrenProp>
 
 
     </div>
