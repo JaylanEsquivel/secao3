@@ -10,3 +10,4 @@
 - Loops com arrays de Objetos
 - Fragmentos
 - Children Props
+- Executando funções em props

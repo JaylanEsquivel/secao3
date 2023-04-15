@@ -9,6 +9,7 @@ import ShowUserName from './components/ShowUserName';
 import CarDetails from './components/CarDetails';
 import Fragment from './components/Fragment';
 import ChildrenProp from './components/ChildrenProp';
+import ExecuteFunction from './components/ExecuteFunction';
 
 function App() {
 
@@ -20,6 +21,10 @@ function App() {
     { id: 2, brand: "Fiat", color: "Prata", km: 1000, newCar: false },
     { id: 3, brand: "Fiat", color: "Azul", km: 0, newCar: true }
   ]
+
+  function showMessage(){
+    console.log("Estou sendo passado por Props");
+  }
 
   return (
     <div className="App">
@@ -49,6 +54,7 @@ function App() {
       {/* Loop de arrays de objetos */}
       {cars.map((car) => (
         <CarDetails
+          key={car.id}
           brand={car.brand}
           km={car.km}
           color={car.color}
@@ -66,6 +72,10 @@ function App() {
           <p>AQUI È UM CHILDREN PROP</p>
         </div>
       </ChildrenProp>
+
+      {/* Passando Função por props */}
+
+      <ExecuteFunction showMessage={showMessage}/>
 
 
     </div>
